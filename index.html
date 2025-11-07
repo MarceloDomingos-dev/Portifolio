@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Marcelo Domingos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#educacao">Educação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">
+      <img id="themeIcon" src="img/moon.png" alt="Alternar tema" width="24" height="24">
+    </button>
+
+    <div class="menu-hamburguer" id="hamburger">
+      <div class="barra"></div>
+      <div class="barra"></div>
+      <div class="barra"></div>
+    </div>
+  </header>
+
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <h1>Olá, eu sou o <span style="color:var(--accent)">Marcelo Domingos</span></h1>
+    <p id="typing"></p>
+    <button class="botao" id="btnProjects">Projetos</button>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="container sobre-wrapper">
+      <img src="img/minha-foto.jpeg" alt="Foto de Marcelo Domingos" class="foto-perfil">
+      <p>
+        Sou um estudante de <strong>17 anos</strong> do <strong>Colégio Cotemig</strong>, apaixonado por tecnologia e
+        desenvolvimento de sistemas.
+        Tenho conhecimentos em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, mas meu
+        verdadeiro foco está na área de
+        <strong>banco de dados</strong> e <strong>back-end</strong>.
+      </p>
+      <p>
+        Trabalho com <strong>C#</strong> e <strong>MySQL</strong>, desenvolvendo estruturas de dados bem organizadas,
+        seguras e integradas às aplicações.
+        Gosto de entender como as informações fluem dentro de um sistema e de buscar formas de otimizar o desempenho e a
+        segurança dos dados.
+      </p>
+      <p>
+        Também possuo familiaridade com o <strong>Linux</strong>, o que me ajuda a compreender melhor o funcionamento de
+        servidores,
+        sistemas operacionais e ambientes de desenvolvimento voltados para redes e infraestrutura.
+      </p>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="container projetos-container">
+      <div class="projeto scroll-reveal" data-projeto="1">
+        <h3>E-commerce</h3>
+        <p>Site de e-commerce minimalista de roupas básicas.</p>
+      </div>
+      <div class="projeto scroll-reveal" data-projeto="2">
+        <h3>Reprodução de Site (Grid)</h3>
+        <p>Layout moderno reproduzido com CSS Grid.</p>
+      </div>
+      <div class="projeto scroll-reveal" data-projeto="3">
+        <h3>Reprodução de Site (Flex)</h3>
+        <p>Layout responsivo feito com Flexbox.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="habilidades">
+      <div class="habilidade scroll-reveal">
+        <img src="img/html-5-svgrepo-com (3).svg" alt="HTML" class="icone-habilidade">
+        HTML
+      </div>
+      <div class="habilidade scroll-reveal">
+        <img src="img/css-3-svgrepo-com.svg" alt="CSS" class="icone-habilidade">
+        CSS
+      </div>
+      <div class="habilidade scroll-reveal">
+        <img src="img/javascript-svgrepo-com.svg" alt="JavaScript" class="icone-habilidade">
+        JavaScript
+      </div>
+      <div class="habilidade scroll-reveal">
+        <img src="img/csharp-svgrepo-com.svg" alt="C#" class="icone-habilidade">
+        C#
+      </div>
+      <div class="habilidade scroll-reveal">
+        <img src="img/mysql-logo-svgrepo-com.svg" alt="MySQL" class="icone-habilidade">
+        MySQL
+      </div>
+      <div class="habilidade scroll-reveal">
+        <img src="img/linux-svgrepo-com.svg" alt="Linux" class="icone-habilidade">
+        Linux
+      </div>
+    </div>
+  </section>
+
+  <section id="educacao">
+    <h2>Educação</h2>
+    <div class="linha-tempo">
+      <div class="item-linha-tempo">
+        <h4>Técnico em Informática</h4><span>Colégio Cotemig — 2024–2026</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form id="contactForm">
+      <div><input type="text" id="name" placeholder="Nome completo">
+        <div class="error" id="errName"></div>
+      </div>
+      <div><input type="text" id="phone" placeholder="Telefone">
+        <div class="error" id="errPhone"></div>
+      </div>
+      <div><input type="email" id="email" placeholder="E-mail">
+        <div class="error" id="errEmail"></div>
+      </div>
+      <div><textarea id="message" placeholder="Mensagem"></textarea>
+        <div class="error" id="errMsg"></div>
+      </div>
+      <button class="botao" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Marcelo Domingos. Todos os direitos reservados.
+    <br>
+    <a href="mailto:marcelodomingoss00@gmail.com?subject=Contato%20via%20Portfólio&body=Olá%20Marcelo%2C%0A%0A"
+      style="color:var(--accent); text-decoration:none; font-weight:500; display:inline-flex; align-items:center; gap:6px;">
+      <img src="img/e-mail.png" alt="Ícone de e-mail" style="width:18px; height:18px;">
+      marcelodomingoss00@gmail.com
+    </a>
+    &nbsp;|&nbsp;
+    <a href="https://www.linkedin.com/in/marcelo-domingos00/" target="_blank"
+      style="color:var(--accent); text-decoration:none; font-weight:500; display:inline-flex; align-items:center; gap:6px;">
+      <img src="img/linkedin.png" alt="Ícone do LinkedIn" style="width:18px; height:18px;">
+      LinkedIn
+    </a>
+  </footer>
+
+  <div id="modal" aria-hidden="true">
+    <div class="conteudo-modal" id="modalBody">
+      <span class="fechar" id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <a href="#" target="_blank" id="modalLink" style="color:var(--accent);font-weight:600;">Ver no GitHub →</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
